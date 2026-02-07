@@ -7,7 +7,7 @@ pero si de algo estoy seguro es que te quiero
 en cada versión de mi vida. 💖
 
 
-Listo nuestra cita sera este 14 de febrero en Tongoy 🌊✨
+Te espero para nuestra cita sera este 14 de febrero en Tongoy 🌊✨
 
 Te amo mucho, mi vida 💋❤️`;
 
@@ -248,3 +248,4 @@ Te amo mucho, mi vida 💋❤️`;
     }, 55);
   }
 });
+
