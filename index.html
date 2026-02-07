@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿San Valentín conmigo?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="card">
+    <h1>Hola, <span id="name">Mi Bebita Hermosa</span> ✨</h1>
+
+    <p class="subtitle">
+      Compilé mis sentimientos y no hubo errores… solo <b>love warnings</b> 🥺💖
+    </p>
+
+    <section class="frame">
+
+      <div class="top">
+        <img class="pic clickable" data-key="foto1" src="img/foto1.jpg" alt="foto 1">
+        <img class="pic clickable" data-key="foto2" src="img/foto2.jpg" alt="foto 2">
+      </div>
+
+      <div class="middle">
+        <div class="side">
+          <img class="pic clickable" data-key="foto3" src="img/foto3.jpg" alt="foto 3">
+          <img class="pic clickable" data-key="foto4" src="img/foto4.jpg" alt="foto 4">
+        </div>
+
+        <div class="box">
+          <p class="question">¿Quieres ser mi San Valentín?</p>
+
+          <div class="buttons">
+            <button id="yesBtn" class="btn yes" type="button">Sí 💖</button>
+            <button id="noBtn" class="btn no" type="button">No 🙃</button>
+          </div>
+
+          <button id="specialBtn" class="btn extra" type="button">
+            ¿Quieres ver algo especial? 👀
+          </button>
+
+          <!-- PREGUNTA OCULTA -->
+          <div id="questionBox" class="questionBox" aria-hidden="true">
+            <p class="qTitle">Pregunta secreta 💌</p>
+            <p class="qText">¿Cuál es nuestra comida favorita?</p>
+
+            <input id="answerInput" placeholder="Escribe aquí...">
+            <button id="answerBtn" class="btn yes" type="button">Responder 💕</button>
+
+            <p id="answerResult" class="answerResult"></p>
+          </div>
+
+          <p id="result" class="result"></p>
+          <p id="finalYes" class="finalYes"></p>
+        </div>
+
+        <div class="side">
+          <img class="pic clickable" data-key="foto5" src="img/foto5.jpg" alt="foto 5">
+          <img class="pic clickable" data-key="foto6" src="img/foto6.jpg" alt="foto 6">
+        </div>
+      </div>
+
+      <div class="bottom">
+        <img class="pic clickable" data-key="foto7" src="img/foto7.jpg" alt="foto 7">
+        <img class="pic clickable" data-key="foto8" src="img/foto8.jpg" alt="foto 8">
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Capa de corazoncitos (efecto) -->
+  <div id="loveLayer">
+    <div id="heartBig"></div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="song" preload="auto">
+    <source src="audio/cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- MODAL GENÉRICO para fotos 1-8 (click) -->
+  <div id="imgModal" class="modal" aria-hidden="true">
+    <div class="modalCard">
+      <img id="imgModalPhoto" class="modalImg" alt="foto">
+      <p id="imgModalText" class="modalText"></p>
+      <button id="closeImgModal" class="btn close" type="button">Cerrar ✨</button>
+    </div>
+  </div>
+
+  <!-- MODAL foto 9 (secreta) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modalCard">
+      <img id="specialImg" class="modalImg" src="img/foto9.jpg" alt="Foto especial">
+      <p class="modalText">Una fotito con su hijita peluda❤️</p>
+      <button id="closeModal" class="btn close" type="button">Cerrar ✨</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
